@@ -1,0 +1,7 @@
+CREATE TABLE Monsters (
+	MonsterID int,
+    MonsterName varchar(255),
+    Atk int,
+    Def int,
+    MonsterDescription varchar(255)
+    );
