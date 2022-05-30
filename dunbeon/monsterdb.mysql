@@ -5,3 +5,5 @@ CREATE TABLE Monsters (
     Def int,
     MonsterDescription varchar(255)
     );
+
+ALTER TABLE Monsters ADD Room int;
