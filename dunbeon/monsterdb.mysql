@@ -7,3 +7,5 @@ CREATE TABLE Monsters (
     );
 
 ALTER TABLE Monsters ADD Room int;
+
+INSERT INTO django_adv_db.rooms VALUES (2, "second", "next room", "stone", "extra stone", 7, 8);
