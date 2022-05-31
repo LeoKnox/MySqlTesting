@@ -21,3 +21,7 @@ WHERE m.roomid = r.idrooms;
 SELECT r.room_name, r.room_description, m.monstername, m.monsterdescription
 FROM django_adv_db.rooms AS r, django_adv_db.monsters as m
 WHERE m.roomid=r.idrooms;
+
+SELECT django_adv_db.rooms.room_name, django_adv_db.rooms.room_description, django_adv_db.monsters.monstername, django_adv_db.monsters.monsterdescription
+FROM django_adv_db.rooms
+LEFT JOIN django_adv_db.monsters ON django_adv_db.rooms.idrooms=django_adv_db.monsters.roomid;
