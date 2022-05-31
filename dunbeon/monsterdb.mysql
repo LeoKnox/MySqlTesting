@@ -13,3 +13,7 @@ INSERT INTO django_adv_db.rooms VALUES (2, "second", "next room", "stone", "extr
 UPDATE django_adv_db.rooms SET wall_texture = 'stone wall' WHERE idrooms=2;
 
 INSERT INTO django_adv_db.monsters VALUES (1, "Orc", 10, 12, "standard orc", 1);
+
+SELECT r.room_name, r.room_description, m.monstername
+FROM django_adv_db.rooms AS r, django_adv_db.monsters AS m
+WHERE m.roomid = r.idrooms;
