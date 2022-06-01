@@ -33,4 +33,12 @@ CREATE TABLE treasures (
     roomID int,
     locationID int,
     PRIMARY KEY (Treasureid)
+	    
+CREATE TABLE locations (
+    Locationid int NOT NULL AUTO_INCREMENT,
+    monsterid int,
+    specifics varchar(2555),
+    dificulty int,
+    PRIMARY KEY (Locationid)
+    );
     )
