@@ -26,19 +26,19 @@ SELECT django_adv_db.rooms.room_name, django_adv_db.rooms.room_description, djan
 FROM django_adv_db.rooms
 LEFT JOIN django_adv_db.monsters ON django_adv_db.rooms.idrooms=django_adv_db.monsters.roomid;
 
-CREATE TABLE treasures (
+CREATE TABLE django_adv_db.treasures (
 	Treasureid int NOT NULL AUTO_INCREMENT,
     TreasureName varchar(255),
     TreasureDescription varchar(255),
     roomID int,
     locationID int,
     PRIMARY KEY (Treasureid)
-	    
-CREATE TABLE locations (
+    );
+    
+CREATE TABLE django_adv_db.locations (
     Locationid int NOT NULL AUTO_INCREMENT,
     monsterid int,
     specifics varchar(2555),
     dificulty int,
     PRIMARY KEY (Locationid)
     );
-    )
