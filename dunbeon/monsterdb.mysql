@@ -35,10 +35,22 @@ CREATE TABLE django_adv_db.treasures (
     PRIMARY KEY (Treasureid)
     );
     
+INSERT INTO django_adv_db.treasures (TreasureName, TreasureDescription, roomID, locationID) VALUES (
+	"gold",
+    "pile of gold",
+    2,
+    1);
+    
 CREATE TABLE django_adv_db.locations (
     Locationid int NOT NULL AUTO_INCREMENT,
     monsterid int,
     specifics varchar(2555),
     dificulty int,
     PRIMARY KEY (Locationid)
+    );
+
+INSERT INTO django_adv_db.locations (monsterid, specifics, dificulty) VALUES (
+	1,
+    "in a bag",
+    3
     );
