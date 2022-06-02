@@ -66,3 +66,6 @@ ORDER BY width ASC;
 SELECT room_name, width, length
 FROM django_adv_db.rooms
 HAVING MAX(width) > 5;
+
+SELECT * FROM django_adv_db.rooms
+WHERE EXISTS (SELECT RoomID FROM django_adv_db.monsters WHERE rooms.idrooms = monsters.roomid);
