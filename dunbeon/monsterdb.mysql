@@ -58,3 +58,7 @@ INSERT INTO django_adv_db.locations (monsterid, specifics, dificulty) VALUES (
 SELECT MAX(length), room_name
 FROM django_adv_db.rooms
 ORDER BY MAX(length) ASC;
+
+SELECT MAX(width), room_name
+FROM django_adv_db.rooms
+ORDER BY width ASC;
