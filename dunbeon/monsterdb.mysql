@@ -62,3 +62,7 @@ ORDER BY MAX(length) ASC;
 SELECT MAX(width), room_name
 FROM django_adv_db.rooms
 ORDER BY width ASC;
+
+SELECT room_name, width, length
+FROM django_adv_db.rooms
+HAVING MAX(width) > 5;
