@@ -69,3 +69,6 @@ HAVING MAX(width) > 5;
 
 SELECT * FROM django_adv_db.rooms
 WHERE EXISTS (SELECT RoomID FROM django_adv_db.monsters WHERE rooms.idrooms = monsters.roomid);
+
+SELECT * FROM django_adv_db.rooms
+WHERE room_name IN ("entry", "second");
