@@ -72,3 +72,6 @@ WHERE EXISTS (SELECT RoomID FROM django_adv_db.monsters WHERE rooms.idrooms = mo
 
 SELECT * FROM django_adv_db.rooms
 WHERE room_name IN ("entry", "second");
+
+SELECT * FROM django_adv_db.rooms
+WHERE room_name NOT IN ("entry", "storage");
