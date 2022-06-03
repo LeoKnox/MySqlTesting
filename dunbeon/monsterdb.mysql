@@ -77,3 +77,5 @@ SELECT * FROM django_adv_db.rooms
 WHERE room_name NOT IN ("entry", "storage");
 
 SELECT * FROM django_adv_db.rooms LIMIT 1;
+
+SELECT * FROM django_adv_db.rooms ORDER BY idrooms DESC LIMIT 1;
