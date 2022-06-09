@@ -1,0 +1,2 @@
+SELECT city FROM station
+WHERE city;
