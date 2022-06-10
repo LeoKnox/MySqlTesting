@@ -1,2 +1,2 @@
-SELECT city FROM station
-WHERE city LIKE '[aeiou]%';
+SELECT * FROM station
+WHERE city LIKE 'c%';
