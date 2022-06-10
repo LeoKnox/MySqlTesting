@@ -1,2 +1,2 @@
 SELECT * FROM station
-WHERE city LIKE 'c%';
+WHERE city LIKE 'a%'||'c%';
