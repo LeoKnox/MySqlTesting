@@ -1,2 +1,2 @@
-SELECT min(long_w) FROM station
-WHERE long_w > 38.7780;
+SELECT * FROM station
+WHERE long_w = MIN(SELECT long_w FROM station WHERE long_w > 38.7780);
