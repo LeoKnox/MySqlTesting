@@ -1,1 +1,1 @@
-SELECT COUNT FROM city WHERE population > 100000;
+SELECT COUNT FROM city t WHERE population > 100000;
